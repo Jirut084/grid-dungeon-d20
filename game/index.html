@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid Dungeon d20 — prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stage">
+    <canvas id="view" width="640" height="360"></canvas>
+    <div id="hud">
+      <div id="xp"><i></i></div>
+      <div id="bossbar" hidden><b></b><div class="bar"><i></i><s></s></div></div>
+      <div id="units">
+        <div class="unit" id="me"><canvas width="32" height="32"></canvas><b></b><div class="hp"><i></i><u></u></div><small></small></div>
+        <div class="unit small" id="partner"><canvas width="32" height="32"></canvas><b></b><div class="hp"><i></i><u></u></div><small></small></div>
+      </div>
+      <div id="topright"><div id="relics"></div><div id="chains"></div></div>
+      <div id="room-name"></div>
+      <div id="weapons"></div>
+      <div id="prompt"></div>
+      <div id="skills"></div>
+      <div id="cmds"><span data-cmd="follow"></span><span data-cmd="wait"></span><span data-cmd="target"></span></div>
+      <div id="bark"></div>
+      <div id="toast"></div>
+      <div id="banner" hidden><p class="dm"></p><p class="stats"></p><p class="trust"></p><p class="next"></p></div>
+      <div id="controls"></div>
+      <div id="modal" hidden></div>
+      <div id="journal" hidden></div>
+      <div id="rate" hidden></div>
+      <div id="end" hidden></div>
+    </div>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
